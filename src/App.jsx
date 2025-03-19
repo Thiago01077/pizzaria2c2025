@@ -4,9 +4,9 @@ function App(){
 
    const [nome, setNome] = useState('Neymar Junior')
 
-  return (
-     <div>
-        <h3> Pizzaria 2c </h3>
+   const Formulario = () => {
+    return (
+       <div>
         <input
           className="nome" 
           onChange={(e)=>{setNome(e.target.value)}} 
@@ -19,6 +19,17 @@ function App(){
           Clique Aqui
         </button>
 
+       </div>
+    );
+   };
+
+
+  return (
+     <div>
+        <h3> Pizzaria 2c </h3>
+       <Formulario />
+       <Formulario />
+       <Formulario />
      </div>
 
     )
