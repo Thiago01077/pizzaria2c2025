@@ -1,27 +1,46 @@
-import { useState } from "react"
+import {useState} from "react"
 
 function App(){
 
-   const [nome, setNome] = useState('Neymar Junior')
+  const [nome,setNome] = useState('Neymar Júnior')
 
-   const Formulario = () => {
+  const Formulario = () => {
     return (
-       <div>
-        <input
-          className="nome" 
-          onChange={(e)=>{setNome(e.target.value)}} 
-          name="nome"
-          type="text" />
+      <div>
+           <input
+      className="nome"
+      onChange={(e)=>{setNome(e.target.value)}}
+      name="nome"
+      type="text" />
+      <button
+      onClick={()=>{alert(nome)}}
+      className="botao">
+      CLIQUE AQUI 
+      </button>
+      </div>
+    )
+  }
 
-        <button
-        onClick={()=>{alert(nome)}}
-        className="botao">
-          Clique Aqui
-        </button>
+  return(
 
-       </div>
-    );
-   };
+    <div>
+      <h3>pizzaria 2c</h3>
+      <Formulario/>
+      <Formulario/>
+      <Formulario/>
+
+
+    
+
+
+
+    </div>
+  )
+
+
+}
+
+export default App 
 
 
   return (
