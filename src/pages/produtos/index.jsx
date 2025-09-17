@@ -13,7 +13,7 @@ const Produtos = () => {
         <div>
             <h3>Listagem de Produtos</h3>
             <ul>
-               
+                {listaPizzas}
             </ul>
         </div>
     )
